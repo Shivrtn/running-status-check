@@ -1,8 +1,9 @@
 from flask import Flask, jsonify
 import time
 
+from flask_cors import CORS
 app = Flask(__name__)
-
+CORS(app)
 # Record the time when the server starts
 start_time = time.time()
 
